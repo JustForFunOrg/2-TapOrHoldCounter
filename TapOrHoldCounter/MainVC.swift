@@ -11,17 +11,37 @@ import UIKit
 class MainVC: UIViewController {
 
     @IBOutlet weak var counter: UILabel!
+    @IBOutlet weak var tapOrHoldButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        resetTapped(self)
+        // reset counter
+        resetButtonTapped(self)
+        
+        addGestureRecognizers()
     }
     
-    @IBAction func resetTapped(sender: AnyObject) {
+    func addGestureRecognizers() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: "tapOrHoldButtonTapped")
+        let holdGesture = UILongPressGestureRecognizer(target: self, action: "tapOrHoldButtonHolded")
+        tapGesture.numberOfTapsRequired = 1
+        tapOrHoldButton.addGestureRecognizer(tapGesture)
+        tapOrHoldButton.addGestureRecognizer(holdGesture)
+    }
+    
+    func tapOrHoldButtonTapped() {
+        increaseCounter()
+    }
+    
+    func tapOrHoldButtonHolded() {
+        increaseCounter()
+    }
+    
+    @IBAction func resetButtonTapped(sender: AnyObject) {
         counter.text = "0";
     }
     
-    @IBAction func onTapOrHold(sender: AnyObject) {
+    func increaseCounter() {
         guard let counterText = counter.text else {
             return
         }
