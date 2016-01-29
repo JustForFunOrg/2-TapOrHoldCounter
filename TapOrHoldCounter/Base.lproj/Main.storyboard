@@ -9,7 +9,7 @@
         <!--Counter-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="TapOrHoldCounter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="TapOrHoldCounter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -71,7 +71,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="counter" destination="udO-OA-p90" id="WKB-A3-IwM"/>
+                        <outlet property="counterLabel" destination="udO-OA-p90" id="cP6-7U-dMp"/>
                         <outlet property="tapOrHoldButton" destination="3f8-De-qDF" id="Ks5-t1-85w"/>
                     </connections>
                 </viewController>

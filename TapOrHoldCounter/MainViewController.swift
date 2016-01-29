@@ -8,9 +8,9 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+class MainViewController: UIViewController {
 
-    @IBOutlet weak var counter: UILabel!
+    @IBOutlet weak var counterLabel: UILabel!
     @IBOutlet weak var tapOrHoldButton: UIButton!
     
     override func viewDidLoad() {
@@ -38,16 +38,16 @@ class MainVC: UIViewController {
     }
     
     @IBAction func resetButtonTapped(sender: AnyObject) {
-        counter.text = "0";
+        counterLabel.text = "0";
     }
     
     func increaseCounter() {
-        guard let counterText = counter.text else {
+        guard let counterText = counterLabel.text else {
             return
         }
         
         if let currentNumber = Int(counterText) {
-            counter.text = String(currentNumber + 1)
+            counterLabel.text = String(currentNumber + 1)
         }
     }
 }

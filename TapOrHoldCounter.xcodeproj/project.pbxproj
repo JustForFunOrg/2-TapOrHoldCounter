@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0408A6B01C597D0D00FEBD82 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408A6AF1C597D0D00FEBD82 /* MainVC.swift */; };
+		0408A6B01C597D0D00FEBD82 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0408A6AF1C597D0D00FEBD82 /* MainViewController.swift */; };
 		04808C821C5978BD00E8D285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04808C811C5978BD00E8D285 /* AppDelegate.swift */; };
 		04808C871C5978BD00E8D285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04808C851C5978BD00E8D285 /* Main.storyboard */; };
 		04808C891C5978BD00E8D285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04808C881C5978BD00E8D285 /* Assets.xcassets */; };
@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0408A6AF1C597D0D00FEBD82 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		0408A6AF1C597D0D00FEBD82 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04808C7E1C5978BD00E8D285 /* TapOrHoldCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapOrHoldCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04808C811C5978BD00E8D285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04808C861C5978BD00E8D285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 				04808C881C5978BD00E8D285 /* Assets.xcassets */,
 				04808C8A1C5978BD00E8D285 /* LaunchScreen.storyboard */,
 				04808C8D1C5978BD00E8D285 /* Info.plist */,
-				0408A6AF1C597D0D00FEBD82 /* MainVC.swift */,
+				0408A6AF1C597D0D00FEBD82 /* MainViewController.swift */,
 			);
 			path = TapOrHoldCounter;
 			sourceTree = "<group>";
@@ -257,7 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04808C821C5978BD00E8D285 /* AppDelegate.swift in Sources */,
-				0408A6B01C597D0D00FEBD82 /* MainVC.swift in Sources */,
+				0408A6B01C597D0D00FEBD82 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
